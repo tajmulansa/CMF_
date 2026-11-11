@@ -17,11 +17,13 @@ Version 0.1 - scaffold. `templates/` is copied from the open-source (MIT) `mromi
 - Save after every step. Commit often.
 
 ## How the references work
-Each reference video gets its own folder: `references/vox/<slug>/` (start from `references/vox/_TEMPLATE/`).
-- `frames/`: frame-by-frame stills (e.g. 2 fps) plus contact sheets.
-- `audio/`: separated stems if available (voice, music, sfx).
-- `transcript.md`: word-timed transcript.
-- `notes.md`: shot-by-shot breakdown (see template).
+Reference material lives in `references/`, split by type. Use the same `<video-slug>` everywhere.
+- `references/vox/<slug>/`: per-video folder (start from `_TEMPLATE/`) with `audio/` (separated stems), `transcript.md` (word-timed) and `notes.md` (shot-by-shot breakdown).
+- `references/frames/<slug>/`: frame-by-frame stills (e.g. 2 fps).
+- `references/sheets/<slug>/`: contact sheets with timestamps.
+- `references/random-frames/`: single standout frames (maps, titles, charts, grades), indexed in `INDEX.md`.
+- `references/tutorial/`: tutorial videos about how to make this style: `frames/<slug>/`, `transcripts/<slug>.md`, and `<slug>.notes.md` with extracted techniques.
+Each folder has a README with naming rules.
 
 Measured findings from all references are distilled into `references/STYLE_BIBLE.md` and `references/reports/` (pacing, shot length, motion, typography, colour, sound). The skill follows those reports, so improving them improves every video.
 
