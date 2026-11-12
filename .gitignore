@@ -4,3 +4,7 @@ out/
 *.mp4
 *.mov
 .env
+
+# allow reference clips
+!references/incoming/*.mp4
+!references/incoming/*.mov
