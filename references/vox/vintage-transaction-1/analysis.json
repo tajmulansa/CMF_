@@ -1,0 +1,40 @@
+{
+ "video": "vintage transaction (Vox.youtube).mp4",
+ "fps": 60.0,
+ "frames": 45,
+ "duration_s": 0.75,
+ "hold_gap_histogram": {
+  "1": 4,
+  "3": 8,
+  "2": 7
+ },
+ "content_fps_estimate": 23.7,
+ "dips": [],
+ "hard_cuts_frames": [
+  25
+ ],
+ "shots": [
+  {
+   "start": 0,
+   "end": 24,
+   "seconds": 0.417
+  },
+  {
+   "start": 25,
+   "end": 44,
+   "seconds": 0.333
+  }
+ ],
+ "integrated_lufs": -28.3,
+ "true_peak_dbfs": -12.8,
+ "rms_db_per_100ms": [
+  -24,
+  -30,
+  -33,
+  -32,
+  -38,
+  -39,
+  -39,
+  -42
+ ]
+}

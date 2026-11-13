@@ -52,6 +52,8 @@ The ten that matter most:
 9. Music 2-3 sections for a short, minimal, ducked 14-18 dB, dropped on the claim; SFX 3-5 accents, whoosh 1-3 frames early.
 10. Final mix about -14 LUFS, true peak -1 to -2 dBTP; keep key content inside the 984x1500 px safe core.
 Sources of imagery must be logged in an asset ledger (URL, author, licence, date).
+First measurements from real Vox clips (`references/reports/observed.md`): content is 24 fps; shot changes in an archival montage were a 4-frame (at 24 fps) dip to flat dark grey (#1d1d1d) with the corner watermark kept on screen, not plain hard cuts; subtitles lag the picture cut by about 0.25 s; archival shots drift a few percent over 1.5-2 s. Tiny sample (5 s, one episode), so verify on more clips.
+Analyse any new clip with `python3 -I templates/scripts/analyze_clip.py <video> <slug> <repo>` (writes frames, a contact sheet and analysis.json).
 
 ## Refinement loop (the point of this repo)
 After each video: compare against the references, write what felt "generated" instead of "human-made" into `references/reports/`, and change the skill so the next video avoids it.
